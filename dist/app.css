@@ -2,8 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
   background-color: white;
+}
+
+body > * {
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-header {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-header li {
+  margin: 0 10px 0 10px;
+}
+
+.header-section {
+  display: flex;
+}
+
+.header-section > * {
+  width: 50%;
+}
+
+.header-section > .left-side > * {
+  margin: 20px 0 20px 0;
+}
+
+.header-section > .right-side img {
+  width: 100%;
+}
+
+main {
+  background-color: #0414b3;
+  height: 100px;
 }

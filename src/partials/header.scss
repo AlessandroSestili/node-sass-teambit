@@ -1,0 +1,37 @@
+header {
+    padding: $spacing;
+
+    border-bottom: 1px solid black;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
+
+}
+
+.navbar-header {
+    display: flex;
+
+    list-style: none;
+}
+
+.navbar-header li {
+    margin: 0 ($spacing/2) 0 ($spacing/2) ;
+}
+
+
+// Header section below header ************
+.header-section {
+    display: flex;
+}
+.header-section > * {
+    width: 50%;
+}
+.header-section > .left-side > *{
+    margin: ($spacing) 0 ($spacing) 0;
+}
+.header-section > .right-side img{
+    width: 100%;
+}
