@@ -87,3 +87,20 @@ header {
 .employee-img-container img {
   max-width: 100%;
 }
+
+.third-section-container {
+  background-color: #0414b3;
+  text-align: center;
+}
+
+.founders-section {
+  margin: auto;
+  width: 50%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.founders-container {
+  display: flex;
+}

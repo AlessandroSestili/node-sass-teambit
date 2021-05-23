@@ -40,4 +40,22 @@ main {
     max-width: 100%;
 }
 
+// Third Section
+.third-section-container {
+    background-color: $primaryBackgrooundColor;
+
+    text-align: center;
+}
+.founders-section {
+    margin: auto;
+    width: 50%;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.founders-container {
+    display: flex;
+}
+
 
