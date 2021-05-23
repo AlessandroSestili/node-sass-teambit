@@ -10,9 +10,9 @@ body {
     background-color: white;
 }
 
-body > * {
+header , .header-section , .first-section , .second-section , .third-section {
     margin: auto;
+    width: 80%;
 
-    margin-bottom: $spacing*2;
 }
 

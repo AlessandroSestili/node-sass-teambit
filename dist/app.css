@@ -9,9 +9,9 @@ body {
   background-color: white;
 }
 
-body > * {
+header, .header-section, .first-section, .second-section, .third-section {
   margin: auto;
-  margin-bottom: 40px;
+  width: 80%;
 }
 
 header {
@@ -46,7 +46,26 @@ header {
   width: 100%;
 }
 
-main {
+.first-section-container {
   background-color: #0414b3;
-  height: 100px;
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.images-container img {
+  width: 80px;
+}
+
+.rabbit-img-container img {
+  width: 20%;
+}
+
+.top-side {
+  border-bottom: 1px solid white;
 }

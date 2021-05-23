@@ -1,6 +1,28 @@
-main{
+main {
+
+}
+
+// First Section
+.first-section-container{
     background-color: $primaryBackgrooundColor;
 
-    height: 100px;
+    text-align: center;
+
+    padding-bottom: $spacing * 4;
+    padding-top: $spacing*2;
 }
+.images-container {
+    display: flex;
+    justify-content: space-around;
+}
+.images-container img {
+    width: $spacing *4;
+}
+.rabbit-img-container img{
+    width: 20%;
+}
+.top-side {
+    border-bottom: 1px solid white;
+}
+
 
