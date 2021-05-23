@@ -28,6 +28,7 @@ header {
 
 .navbar-header li {
   margin: 0 10px 0 10px;
+  cursor: pointer;
 }
 
 .header-section {
@@ -68,4 +69,21 @@ header {
 
 .top-side {
   border-bottom: 1px solid white;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section > * {
+  display: flex;
+}
+
+.second-section > * > * {
+  width: 50%;
+}
+
+.employee-img-container img {
+  max-width: 100%;
 }

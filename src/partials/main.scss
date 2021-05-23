@@ -25,4 +25,19 @@ main {
     border-bottom: 1px solid white;
 }
 
+// Second section 
+.second-section {
+    display: flex;
+    flex-direction: column;
+}
+.second-section > *{
+    display: flex;
+}
+.second-section > * > * {
+    width: 50%;
+}
+.employee-img-container img{
+    max-width: 100%;
+}
+
 
