@@ -1,34 +1,33 @@
-header {
-    padding: $spacing;
+.navbar{
+    border-bottom: 1px solid $secondary_color;
+    .logo-container{
+        @include flex_default;
+        padding: $base_spacing 0;
 
-    border-bottom: 1px solid black;
+        img{
+            padding: 0 $base_spacing / 2;
+        }
+    }
 
-    display: flex;
-    justify-content: space-between;
+    li{
+        padding: $base_spacing;
+        &:hover{
+            color: $hover_color;
+        }
+    }
 }
 
-.navbar-header {
-    display: flex;
-
-    list-style: none;
+h1{
+    padding-top: $base_spacing *3;
+    padding-bottom: $base_spacing;
 }
 
-.navbar-header li {
-    margin: 0 ($spacing/2) 0 ($spacing/2) ;
-    cursor: pointer;
-}
+.multiple-btn-container{
+    @include flex_default;
+    padding-top: $base_spacing * 2;
+    padding-bottom: $base_spacing;
 
-
-// Header section below header ************
-.header-section {
-    display: flex;
-}
-.header-section > * {
-    width: 50%;
-}
-.header-section > .left-side > *{
-    margin: ($spacing) 0 ($spacing) 0;
-}
-.header-section > .right-side img{
-    width: 100%;
+    .btn{
+        margin: $base_spacing / 3
+    }
 }
