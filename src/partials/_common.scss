@@ -1,18 +1,124 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    background-color: white;
+body{
+    color: $secondary_color
 }
 
-header , .header-section , .first-section , .second-section , .third-section {
+
+.container{
+    max-width: 1080px;
+    width: 100%;
     margin: auto;
-    width: 80%;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.whitespace{
+    flex-grow: 1;
+}
+
+ul{
+    @include flex_default;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $blue
+}
+
+.btn{
+    @include flex_default;
+    padding: $base_spacing / 2;
+    border-radius: 5px;
+    width: fit-content;
+    .btn-img{
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .btn-text{
+        padding-left: $base_spacing / 3
+    }
+
+    &.google{
+        color: $blue;
+        border: 1px solid $blue;
+        &:hover{
+            color: $hover_color;
+            border-color: $hover_color;
+            
+        }
+    }
+
+    &.default{
+        color: $white;
+        background-color: $blue;
+    }
 
 }
 
+.small-text{
+    font-size: $base_font_size * 2;
+}
+
+
+.half-size-img{
+    width: 50%;
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+.third-size-img{
+    width: calc(100% / 3);
+    img{
+        width: 50%;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
+.common-size-img{
+    width: calc(100% / 2,5);;
+    margin: auto;
+    img{
+        width: 75%;
+        height: 250px;
+        object-fit: contain; 
+    }
+}
+
+.half-size-container{
+    width: 50%;
+
+    img{
+        width: 100%;
+    }
+
+    &.offset50{
+        margin-left: 50%
+    }
+}
+
+.card{
+    width: 40%;
+    margin: auto;
+    padding: $base_spacing / 2;
+    border: 1px solid $secondary_color;
+    border-radius: 5px;
+    background-color: $white;
+    text-align: left;
+    p{
+        padding: $base_spacing / 2 0;
+    }
+
+}
