@@ -1,8 +1,9 @@
 // Import variables and commons
-@import 'src/partials/variables.scss';
-@import 'src/partials/common.scss';
+@import "src/partials/variables.scss";
+@import "src/partials/mixins.scss";
+@import "src/partials/common.scss";
 
-// Import HTML's part
-@import 'src/partials/header.scss';
-@import 'src/partials/main.scss';
-@import 'src/partials/footer.scss';
+
+@import "src/partials/header.scss";
+@import "src/partials/main.scss";
+@import "src/partials/footer.scss";
